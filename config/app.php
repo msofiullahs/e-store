@@ -70,7 +70,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Asia/Jakarta',
 
     /*
     |--------------------------------------------------------------------------
@@ -186,5 +186,8 @@ return [
     'aliases' => Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
     ])->toArray(),
+
+    'admin_email' => env('ADMIN_EMAIL', 'sofiullah.work@gmail.com'),
+    'admin_pass' => env('ADMIN_PASSWORD', 'admin1234'),
 
 ];
